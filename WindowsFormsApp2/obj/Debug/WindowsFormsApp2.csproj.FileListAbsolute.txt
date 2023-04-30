@@ -32,3 +32,5 @@ C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources

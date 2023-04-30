@@ -100,5 +100,10 @@ namespace WindowsFormsApp2
         {
             textBox2.PasswordChar = '•';
         }
+
+        private void LogIn_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
