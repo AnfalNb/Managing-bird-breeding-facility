@@ -34,3 +34,19 @@ C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LogIn.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SignUp.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.AddBirds.resources
