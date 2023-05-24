@@ -22,44 +22,71 @@ namespace WindowsFormsApp2
         private void kryptonButton_ADD_Cage_Click(object sender, EventArgs e)
         {
 
-            string serial = textBoxForCageSerial.Text;
-            string length = textBoxForLength.Text;
-            string width = textBoxForLength.Text;
-            string heigth = textBoxForHeigth.Text;
-            string material= kryptonComboBox_Material.SelectedItem.ToString();
-
-
-            Cage cage = new Cage(serial, length, width, heigth, material);
-
-            string query = "INSERT INTO cage (CageSerial, Length, Width, Height, Material) " +
-               "VALUES (@CageSerial, @Length, @Width, @Height,  @Material)";
-
-            List<OleDbParameter> parameters = new List<OleDbParameter>()
+            if (!(textBoxForCageSerial.Text == "" && textBoxForHeigth.Text == "" && textBoxForLength.Text == "" && textBoxForWidth.Text == ""))
             {
-                new OleDbParameter("@CageSerial", cage.CageSerial),
-                new OleDbParameter("@Length", cage.Length),
-                new OleDbParameter("@Width", cage.Width),
-                new OleDbParameter("@Height", cage.Height),
-                new OleDbParameter("@Material", cage.Material),
-               
-            };
-            using (OleDbConnection connection = new OleDbConnection(connectionString))
-            {
-                connection.Open();
-                using (OleDbCommand command = new OleDbCommand(query, connection))
+                if (ContainsDigitsAndLetters(textBoxForCageSerial.Text))
                 {
-                    command.Parameters.AddRange(parameters.ToArray());
-                    command.ExecuteNonQuery();
+                    string serial = textBoxForCageSerial.Text;
+                    double length = Convert.ToDouble(textBoxForLength.Text.ToString());
+                    double width = Convert.ToDouble(textBoxForLength.Text.ToString());
+                    double heigth = Convert.ToDouble(textBoxForHeigth.Text.ToString());
+                    string material = kryptonComboBox_Material.SelectedItem.ToString();
 
+
+                    Cage cage = new Cage(serial, length, width, heigth, material);
+
+                    string query = "INSERT INTO cage (CageSerial, Length, Width, Height, Material) " +
+                       "VALUES (@CageSerial, @Length, @Width, @Height,@Material)";
+
+                    List<OleDbParameter> parameters = new List<OleDbParameter>()
+                    {
+                            new OleDbParameter("@CageSerial", cage.CageSerial.ToString()),
+                            new OleDbParameter("@Length", cage.Length.ToString()),
+                            new OleDbParameter("@Width", cage.Width.ToString()),
+                            new OleDbParameter("@Height", cage.Height.ToString()),
+                            new OleDbParameter("@Material", cage.Material.ToString()),
+                    };
+
+                    using (OleDbConnection connection = new OleDbConnection(connectionString))
+                    {
+                        connection.Open();
+                        using (OleDbCommand command = new OleDbCommand(query, connection))
+                        {
+                            command.Parameters.AddRange(parameters.ToArray());
+                            command.ExecuteNonQuery();
+
+                        }
+                        connection.Close();
+
+                    }
+                    textBoxForCageSerial.Text = string.Empty;
+                    kryptonComboBox_Material.SelectedIndex = -1;
+                    textBoxForLength.Text = string.Empty;
+                    textBoxForWidth.Text = string.Empty;
+                    textBoxForHeigth.Text = string.Empty;
                 }
-                connection.Close();
-
+                else
+                {
+                    MessageBox.Show("Invalid serial number. It should contain both numbers and letters.");
+                    textBoxForCageSerial.Focus();
+                }
             }
-            textBoxForCageSerial.Text = string.Empty;
-            kryptonComboBox_Material.SelectedIndex = -1;
-            textBoxForLength.Text = string.Empty;
-            textBoxForWidth.Text = string.Empty;
-            textBoxForHeigth.Text = string.Empty;
+            else
+            {
+                MessageBox.Show("Some fields are empty", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private bool ContainsDigitsAndLetters(string text)
+        {
+            bool containsDigits = text.Any(char.IsDigit);
+            bool containsLetters = text.Any(char.IsLetter);
+
+            return containsDigits && containsLetters;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

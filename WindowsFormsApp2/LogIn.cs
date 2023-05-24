@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
             string password = textBox2.Text;
             // Create an instance of the Excel Application object
             Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook excelWB = excelApp.Workbooks.Open(@"C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\database1.xlsx");
+            Excel.Workbook excelWB = excelApp.Workbooks.Open(@"C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\database1.xlsx");
             Excel._Worksheet excelWS = excelWB.ActiveSheet;
 
             // Find the next empty row in the worksheet
@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
                 {   
                     excelWB.Close();
                     excelApp.Quit();
-                    new Form1().Show();
+                    new UserProfile().Show();
                     this.Hide();
                     return;
                 }
@@ -64,6 +64,7 @@ namespace WindowsFormsApp2
             MessageBox.Show("USERNAME OR PASSWORD WRONG.");
             textBox1.Text = "";
             textBox2.Text = "";
+           
         }
 
         private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)

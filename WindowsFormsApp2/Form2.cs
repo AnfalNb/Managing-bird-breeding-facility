@@ -20,14 +20,13 @@ namespace WindowsFormsApp2
         public Form2()
         {
             InitializeComponent();
+            dataGridView1.BackgroundColor = Color.White;
+            
             // Populate the ComboBox with search criteria options
             comboBox1.Items.AddRange(new string[] { "HatchDate", "Gender", "Serial" , "Species" });
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

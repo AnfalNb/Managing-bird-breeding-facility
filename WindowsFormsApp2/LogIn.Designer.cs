@@ -89,7 +89,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.label3.ForeColor = System.Drawing.Color.CadetBlue;
             this.label3.Location = new System.Drawing.Point(73, 148);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 32);
@@ -113,7 +113,7 @@ namespace WindowsFormsApp2
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.label6.ForeColor = System.Drawing.Color.CadetBlue;
             this.label6.Location = new System.Drawing.Point(140, 626);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 20);
@@ -191,7 +191,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.label4.ForeColor = System.Drawing.Color.CadetBlue;
             this.label4.Location = new System.Drawing.Point(78, 294);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 32);
@@ -343,7 +343,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(194)))), ((int)(((byte)(170)))));
+            this.label1.ForeColor = System.Drawing.Color.CadetBlue;
             this.label1.Location = new System.Drawing.Point(42, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 39);
