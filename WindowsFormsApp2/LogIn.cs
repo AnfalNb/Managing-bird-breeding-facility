@@ -18,7 +18,7 @@ namespace WindowsFormsApp2
 {
     public partial class LogIn : KryptonForm
     {
-        private string usersExcelFilePath = @"C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\database1.xlsx";
+        private string usersExcelFilePath = @"C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\database1.xlsx";
 
 
 
@@ -75,12 +75,12 @@ namespace WindowsFormsApp2
         {
             if (checkbxShowPas.Checked)
             {
-                textBox1.PasswordChar = '\0';
+                //textBox1.PasswordChar = '\0';
                 textBox2.PasswordChar = '\0';
             }
             else
             {
-                textBox1.PasswordChar = '•';
+                //textBox1.PasswordChar = '•';
                 textBox2.PasswordChar = '•';
             }
         }

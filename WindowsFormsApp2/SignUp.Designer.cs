@@ -130,7 +130,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(180, 270);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 41);
+            this.textBox3.Size = new System.Drawing.Size(243, 50);
             this.textBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.textBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -142,7 +142,7 @@ namespace WindowsFormsApp2
             this.textBox3.StateCommon.Border.Rounding = 20;
             this.textBox3.StateCommon.Border.Width = 1;
             this.textBox3.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.textBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.textBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.textBox3.TabIndex = 17;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged_1);
@@ -154,7 +154,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(180, 208);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 41);
+            this.textBox2.Size = new System.Drawing.Size(243, 50);
             this.textBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.textBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -166,7 +166,7 @@ namespace WindowsFormsApp2
             this.textBox2.StateCommon.Border.Rounding = 20;
             this.textBox2.StateCommon.Border.Width = 1;
             this.textBox2.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.textBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.textBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.textBox2.TabIndex = 16;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
@@ -178,7 +178,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(180, 150);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 41);
+            this.textBox1.Size = new System.Drawing.Size(243, 50);
             this.textBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.textBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -190,7 +190,7 @@ namespace WindowsFormsApp2
             this.textBox1.StateCommon.Border.Rounding = 20;
             this.textBox1.StateCommon.Border.Width = 1;
             this.textBox1.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.textBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.textBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.textBox1.TabIndex = 15;
             // 
@@ -199,7 +199,7 @@ namespace WindowsFormsApp2
             this.checkbxShowPas.AutoSize = true;
             this.checkbxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkbxShowPas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkbxShowPas.Location = new System.Drawing.Point(70, 330);
+            this.checkbxShowPas.Location = new System.Drawing.Point(50, 343);
             this.checkbxShowPas.Name = "checkbxShowPas";
             this.checkbxShowPas.Size = new System.Drawing.Size(125, 21);
             this.checkbxShowPas.TabIndex = 18;
@@ -392,7 +392,7 @@ namespace WindowsFormsApp2
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox0.Location = new System.Drawing.Point(180, 89);
             this.textBox0.Name = "textBox0";
-            this.textBox0.Size = new System.Drawing.Size(243, 41);
+            this.textBox0.Size = new System.Drawing.Size(243, 50);
             this.textBox0.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.textBox0.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textBox0.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -404,7 +404,7 @@ namespace WindowsFormsApp2
             this.textBox0.StateCommon.Border.Rounding = 20;
             this.textBox0.StateCommon.Border.Width = 1;
             this.textBox0.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.textBox0.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox0.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 12F);
             this.textBox0.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.textBox0.TabIndex = 14;
             // 

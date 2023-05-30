@@ -73,7 +73,7 @@
             this.textBoxForWidth.Multiline = true;
             this.textBoxForWidth.Name = "textBoxForWidth";
             this.textBoxForWidth.Size = new System.Drawing.Size(177, 29);
-            this.textBoxForWidth.TabIndex = 70;
+            this.textBoxForWidth.TabIndex = 3;
             // 
             // textBoxForLength
             // 
@@ -85,7 +85,7 @@
             this.textBoxForLength.Multiline = true;
             this.textBoxForLength.Name = "textBoxForLength";
             this.textBoxForLength.Size = new System.Drawing.Size(177, 29);
-            this.textBoxForLength.TabIndex = 69;
+            this.textBoxForLength.TabIndex = 2;
             // 
             // textBoxForCageSerial
             // 
@@ -97,7 +97,7 @@
             this.textBoxForCageSerial.Multiline = true;
             this.textBoxForCageSerial.Name = "textBoxForCageSerial";
             this.textBoxForCageSerial.Size = new System.Drawing.Size(177, 29);
-            this.textBoxForCageSerial.TabIndex = 68;
+            this.textBoxForCageSerial.TabIndex = 1;
             // 
             // kryptonTextBox_cage_number
             // 
@@ -152,7 +152,7 @@
             this.kryptonComboBox_Material.Name = "kryptonComboBox_Material";
             this.kryptonComboBox_Material.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
             this.kryptonComboBox_Material.Size = new System.Drawing.Size(177, 25);
-            this.kryptonComboBox_Material.TabIndex = 58;
+            this.kryptonComboBox_Material.TabIndex = 5;
             // 
             // label4
             // 
@@ -292,7 +292,7 @@
             this.kryptonButton_ADD_Cage.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.kryptonButton_ADD_Cage.StateTracking.Border.Rounding = 20;
             this.kryptonButton_ADD_Cage.StateTracking.Border.Width = 1;
-            this.kryptonButton_ADD_Cage.TabIndex = 71;
+            this.kryptonButton_ADD_Cage.TabIndex = 6;
             this.kryptonButton_ADD_Cage.Values.Text = "Add";
             this.kryptonButton_ADD_Cage.Click += new System.EventHandler(this.kryptonButton_ADD_Cage_Click);
             // 
@@ -320,7 +320,7 @@
             this.textBoxForHeigth.Multiline = true;
             this.textBoxForHeigth.Name = "textBoxForHeigth";
             this.textBoxForHeigth.Size = new System.Drawing.Size(177, 29);
-            this.textBoxForHeigth.TabIndex = 73;
+            this.textBoxForHeigth.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -358,6 +358,7 @@
             this.Name = "AddCage";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCage";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox_Material)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
