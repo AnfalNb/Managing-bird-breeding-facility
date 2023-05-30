@@ -32,8 +32,6 @@ C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CopyComplete
-C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
-C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
@@ -85,3 +83,17 @@ C:\Users\user\Desktop\project3\Managing-bird-breeding-facility\WindowsFormsApp2\
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchCage.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.BirdDetails.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchBird.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\MaterialDesignColors.dll
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\MaterialDesignColors.pdb
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.AddBirds.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.AddCage.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.BirdDetails.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchCage.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchBird.resources
+C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserProfile.resources

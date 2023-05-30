@@ -31,7 +31,8 @@ namespace WindowsFormsApp2
 
             this.userProfileForm = userProfileForm;
         }
-        private LogIn log;
+        public string userId = LogIn.getuserId();
+
        // private string userId = LogIn.IDNum;
 
         private void kryptonButton_ADD_BIRD_Click(object sender, EventArgs e)
@@ -55,13 +56,15 @@ namespace WindowsFormsApp2
                     string cagenumber = textBoxForCageNumber.Text;
                     string motherserial = textBoxForMotherSerial.Text;
                     string fatherserial = textBoxForFatherSerial.Text;
+                    string UserID = userId;
 
                     Bird bird = new Bird(serial, species, subspecies, hatchdate, gender, cagenumber, motherserial, fatherserial);
 
                     string query = "INSERT INTO birds (Serial, Species, Subspecies, HatchDate, Gender, CageNumber, MotherSerial, FatherSerial,UserID) " +
                        "VALUES (@Serial, @Species, @Subspecies, @HatchDate, @Gender, @CageNumber, @MotherSerial, @FatherSerial,@UserID)";
-
-                    List<OleDbParameter> parameters = new List<OleDbParameter>()
+                    if (userId != null)
+                    {
+                        List<OleDbParameter> parameters = new List<OleDbParameter>()
                     {
                         new OleDbParameter("@Serial", bird.Serial.ToString()),
                         new OleDbParameter("@Species", bird.species.ToString()),
@@ -71,19 +74,20 @@ namespace WindowsFormsApp2
                         new OleDbParameter("@CageNumber", bird.cage_number),
                         new OleDbParameter("@MotherSerial", bird.Mother_serial),
                         new OleDbParameter("@FatherSerial", bird.Father_serial),
-                        new OleDbParameter("@UserID", userID)
+                        new OleDbParameter("@UserID", UserID)
                     };
-                    using (OleDbConnection connection = new OleDbConnection(connectionString))
-                    {
-                        connection.Open();
-                        using (OleDbCommand command = new OleDbCommand(query, connection))
+                        using (OleDbConnection connection = new OleDbConnection(connectionString))
                         {
-                            command.Parameters.AddRange(parameters.ToArray());
-                            command.ExecuteNonQuery();
+                            connection.Open();
+                            using (OleDbCommand command = new OleDbCommand(query, connection))
+                            {
+                                command.Parameters.AddRange(parameters.ToArray());
+                                command.ExecuteNonQuery();
+
+                            }
+                            connection.Close();
 
                         }
-                        connection.Close();
-
                     }
                     textBoxForSerial.Text = string.Empty;
                     kryptonComboBox_species.SelectedIndex = -1;

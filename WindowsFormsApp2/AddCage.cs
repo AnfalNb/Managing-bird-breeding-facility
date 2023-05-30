@@ -19,6 +19,8 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+        public string userId = LogIn.getuserId();
+
         private void kryptonButton_ADD_Cage_Click(object sender, EventArgs e)
         {
 
@@ -31,33 +33,40 @@ namespace WindowsFormsApp2
                     double width = Convert.ToDouble(textBoxForLength.Text.ToString());
                     double heigth = Convert.ToDouble(textBoxForHeigth.Text.ToString());
                     string material = kryptonComboBox_Material.SelectedItem.ToString();
+                    string UserID = userId;
 
 
                     Cage cage = new Cage(serial, length, width, heigth, material);
 
-                    string query = "INSERT INTO cage (CageSerial, Length, Width, Height, Material) " +
-                       "VALUES (@CageSerial, @Length, @Width, @Height,@Material)";
+                    string query = "INSERT INTO cage (CageSerial, Length, Width, Height, Material,UserID) " +
+                       "VALUES (@CageSerial, @Length, @Width, @Height,@Material,@UserID)";
+                    if (userId != null)
+                    {
 
-                    List<OleDbParameter> parameters = new List<OleDbParameter>()
+                        List<OleDbParameter> parameters = new List<OleDbParameter>()
                     {
                             new OleDbParameter("@CageSerial", cage.CageSerial.ToString()),
                             new OleDbParameter("@Length", cage.Length.ToString()),
                             new OleDbParameter("@Width", cage.Width.ToString()),
                             new OleDbParameter("@Height", cage.Height.ToString()),
                             new OleDbParameter("@Material", cage.Material.ToString()),
+                            new OleDbParameter("@UserID", UserID.ToString()),
+
                     };
 
-                    using (OleDbConnection connection = new OleDbConnection(connectionString))
-                    {
-                        connection.Open();
-                        using (OleDbCommand command = new OleDbCommand(query, connection))
+
+                        using (OleDbConnection connection = new OleDbConnection(connectionString))
                         {
-                            command.Parameters.AddRange(parameters.ToArray());
-                            command.ExecuteNonQuery();
+                            connection.Open();
+                            using (OleDbCommand command = new OleDbCommand(query, connection))
+                            {
+                                command.Parameters.AddRange(parameters.ToArray());
+                                command.ExecuteNonQuery();
+
+                            }
+                            connection.Close();
 
                         }
-                        connection.Close();
-
                     }
                     textBoxForCageSerial.Text = string.Empty;
                     kryptonComboBox_Material.SelectedIndex = -1;

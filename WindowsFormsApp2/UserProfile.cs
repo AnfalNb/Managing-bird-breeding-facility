@@ -16,13 +16,15 @@ namespace WindowsFormsApp2
     {
         public int LoggedInUserID {  get; set; }
         private string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Database2.mdb";
-        public UserProfile(int loggedInUserID)
+        public UserProfile()
         {
             InitializeComponent();
-            LoggedInUserID = loggedInUserID;
+            //LoggedInUserID = loggedInUserID;
             LoadUserBirds();
 
         }
+        public string userId = LogIn.getuserId();
+
         private void LoadUserBirds()
         {
             // Clear existing items in the ListView
@@ -92,6 +94,11 @@ namespace WindowsFormsApp2
         {
             new SearchCage().Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            label2.Text = userId;
         }
     }
 }

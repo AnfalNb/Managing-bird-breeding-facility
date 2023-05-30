@@ -68,10 +68,11 @@
             this.textBoxForWidth.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxForWidth.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxForWidth.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxForWidth.Location = new System.Drawing.Point(487, 385);
+            this.textBoxForWidth.Location = new System.Drawing.Point(433, 308);
+            this.textBoxForWidth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxForWidth.Multiline = true;
             this.textBoxForWidth.Name = "textBoxForWidth";
-            this.textBoxForWidth.Size = new System.Drawing.Size(199, 35);
+            this.textBoxForWidth.Size = new System.Drawing.Size(177, 29);
             this.textBoxForWidth.TabIndex = 70;
             // 
             // textBoxForLength
@@ -79,10 +80,11 @@
             this.textBoxForLength.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxForLength.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxForLength.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxForLength.Location = new System.Drawing.Point(487, 319);
+            this.textBoxForLength.Location = new System.Drawing.Point(433, 255);
+            this.textBoxForLength.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxForLength.Multiline = true;
             this.textBoxForLength.Name = "textBoxForLength";
-            this.textBoxForLength.Size = new System.Drawing.Size(199, 35);
+            this.textBoxForLength.Size = new System.Drawing.Size(177, 29);
             this.textBoxForLength.TabIndex = 69;
             // 
             // textBoxForCageSerial
@@ -90,10 +92,11 @@
             this.textBoxForCageSerial.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxForCageSerial.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxForCageSerial.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxForCageSerial.Location = new System.Drawing.Point(487, 259);
+            this.textBoxForCageSerial.Location = new System.Drawing.Point(433, 207);
+            this.textBoxForCageSerial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxForCageSerial.Multiline = true;
             this.textBoxForCageSerial.Name = "textBoxForCageSerial";
-            this.textBoxForCageSerial.Size = new System.Drawing.Size(199, 35);
+            this.textBoxForCageSerial.Size = new System.Drawing.Size(177, 29);
             this.textBoxForCageSerial.TabIndex = 68;
             // 
             // kryptonTextBox_cage_number
@@ -101,13 +104,12 @@
             this.kryptonTextBox_cage_number.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonTextBox_cage_number.Location = new System.Drawing.Point(487, 574);
-            this.kryptonTextBox_cage_number.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.kryptonTextBox_cage_number.Location = new System.Drawing.Point(433, 459);
             this.kryptonTextBox_cage_number.Multiline = true;
             this.kryptonTextBox_cage_number.Name = "kryptonTextBox_cage_number";
             this.kryptonTextBox_cage_number.Palette = this.kryptonPalette1;
             this.kryptonTextBox_cage_number.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.kryptonTextBox_cage_number.Size = new System.Drawing.Size(199, 0);
+            this.kryptonTextBox_cage_number.Size = new System.Drawing.Size(177, 0);
             this.kryptonTextBox_cage_number.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonTextBox_cage_number.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.kryptonTextBox_cage_number.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -131,9 +133,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label5.Location = new System.Drawing.Point(351, 509);
+            this.label5.Location = new System.Drawing.Point(312, 407);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 33);
+            this.label5.Size = new System.Drawing.Size(112, 29);
             this.label5.TabIndex = 60;
             this.label5.Text = "Material :";
             // 
@@ -145,10 +147,11 @@
             "Iron",
             "Wood",
             "Plastic"});
-            this.kryptonComboBox_Material.Location = new System.Drawing.Point(487, 513);
+            this.kryptonComboBox_Material.Location = new System.Drawing.Point(433, 410);
+            this.kryptonComboBox_Material.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kryptonComboBox_Material.Name = "kryptonComboBox_Material";
             this.kryptonComboBox_Material.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver;
-            this.kryptonComboBox_Material.Size = new System.Drawing.Size(199, 29);
+            this.kryptonComboBox_Material.Size = new System.Drawing.Size(177, 25);
             this.kryptonComboBox_Material.TabIndex = 58;
             // 
             // label4
@@ -159,9 +162,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label4.Location = new System.Drawing.Point(377, 385);
+            this.label4.Location = new System.Drawing.Point(335, 308);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 33);
+            this.label4.Size = new System.Drawing.Size(89, 29);
             this.label4.TabIndex = 57;
             this.label4.Text = "Width :";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -174,9 +177,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label2.Location = new System.Drawing.Point(367, 321);
+            this.label2.Location = new System.Drawing.Point(326, 257);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 33);
+            this.label2.Size = new System.Drawing.Size(97, 29);
             this.label2.TabIndex = 56;
             this.label2.Text = "Length :";
             // 
@@ -186,11 +189,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textbox_serial.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.textbox_serial.Location = new System.Drawing.Point(487, 219);
-            this.textbox_serial.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textbox_serial.Location = new System.Drawing.Point(433, 175);
             this.textbox_serial.Multiline = true;
             this.textbox_serial.Name = "textbox_serial";
-            this.textbox_serial.Size = new System.Drawing.Size(190, 0);
+            this.textbox_serial.Size = new System.Drawing.Size(169, 0);
             this.textbox_serial.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.textbox_serial.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textbox_serial.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -215,9 +217,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label3.Location = new System.Drawing.Point(325, 261);
+            this.label3.Location = new System.Drawing.Point(289, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 33);
+            this.label3.Size = new System.Drawing.Size(134, 29);
             this.label3.TabIndex = 54;
             this.label3.Text = "CageSerial :";
             // 
@@ -226,8 +228,7 @@
             this.kryptonButton_ADD_Cage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton_ADD_Cage.Location = new System.Drawing.Point(430, 582);
-            this.kryptonButton_ADD_Cage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.kryptonButton_ADD_Cage.Location = new System.Drawing.Point(382, 466);
             this.kryptonButton_ADD_Cage.Name = "kryptonButton_ADD_Cage";
             this.kryptonButton_ADD_Cage.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_ADD_Cage.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
@@ -252,7 +253,7 @@
             this.kryptonButton_ADD_Cage.OverrideFocus.Border.Rounding = 100;
             this.kryptonButton_ADD_Cage.OverrideFocus.Border.Width = 1;
             this.kryptonButton_ADD_Cage.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton_ADD_Cage.Size = new System.Drawing.Size(147, 61);
+            this.kryptonButton_ADD_Cage.Size = new System.Drawing.Size(131, 49);
             this.kryptonButton_ADD_Cage.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_ADD_Cage.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_ADD_Cage.StateCommon.Back.ColorAngle = 45F;
@@ -303,9 +304,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label6.Location = new System.Drawing.Point(369, 451);
+            this.label6.Location = new System.Drawing.Point(328, 361);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 33);
+            this.label6.Size = new System.Drawing.Size(96, 29);
             this.label6.TabIndex = 72;
             this.label6.Text = "Height :";
             // 
@@ -314,28 +315,30 @@
             this.textBoxForHeigth.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBoxForHeigth.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxForHeigth.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBoxForHeigth.Location = new System.Drawing.Point(487, 451);
+            this.textBoxForHeigth.Location = new System.Drawing.Point(433, 361);
+            this.textBoxForHeigth.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxForHeigth.Multiline = true;
             this.textBoxForHeigth.Name = "textBoxForHeigth";
-            this.textBoxForHeigth.Size = new System.Drawing.Size(199, 35);
+            this.textBoxForHeigth.Size = new System.Drawing.Size(177, 29);
             this.textBoxForHeigth.TabIndex = 73;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-16, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(-14, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1044, 209);
+            this.pictureBox1.Size = new System.Drawing.Size(928, 167);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 74;
             this.pictureBox1.TabStop = false;
             // 
             // AddCage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1011, 705);
+            this.ClientSize = new System.Drawing.Size(899, 564);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxForHeigth);
             this.Controls.Add(this.label6);
@@ -351,6 +354,7 @@
             this.Controls.Add(this.textbox_serial);
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddCage";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
