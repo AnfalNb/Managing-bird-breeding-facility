@@ -39,8 +39,6 @@ C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breedi
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
-C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
-C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form2.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LogIn.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SignUp.resources
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
@@ -84,3 +82,6 @@ C:\Users\user\Desktop\project3\Managing-bird-breeding-facility\WindowsFormsApp2\
 C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserProfile.resources
 C:\Users\user\Desktop\project3\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchCage.resources
 C:\Users\user\Desktop\project3\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.UserProfile.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchCage.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.BirdDetails.resources
+C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SearchBird.resources

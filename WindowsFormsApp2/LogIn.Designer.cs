@@ -80,7 +80,6 @@ namespace WindowsFormsApp2
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(500, 702);
             this.panel1.TabIndex = 15;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -168,7 +167,6 @@ namespace WindowsFormsApp2
             this.textBox1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // checkbxShowPas
             // 
@@ -349,7 +347,6 @@ namespace WindowsFormsApp2
             this.label1.Size = new System.Drawing.Size(110, 39);
             this.label1.TabIndex = 12;
             this.label1.Text = "LOGIN";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -379,7 +376,6 @@ namespace WindowsFormsApp2
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogIn";
-            this.Load += new System.EventHandler(this.LogIn_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

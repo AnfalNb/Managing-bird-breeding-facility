@@ -21,6 +21,7 @@ namespace WindowsFormsApp2
             InitializeComponent();
             // Populate the ComboBox with search criteria options
             comboBox1.Items.AddRange(new string[] { "CageSerial", "Material" });
+            //dataGridView1.DataSource;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -59,15 +60,8 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
+        
     }
 }
 

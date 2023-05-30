@@ -18,21 +18,29 @@ using System.Windows;
 
 
 
+
 namespace WindowsFormsApp2
 {
     public partial class AddBirds : KryptonForm
     {
         private string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Database2.mdb";
-
-        public AddBirds()
+        private UserProfile userProfileForm;
+        public AddBirds(UserProfile userProfileForm)
         {
             InitializeComponent();
 
-
+            this.userProfileForm = userProfileForm;
         }
+        private LogIn log;
+       // private string userId = LogIn.IDNum;
 
         private void kryptonButton_ADD_BIRD_Click(object sender, EventArgs e)
         {
+            int userID = userProfileForm.LoggedInUserID;
+            // Assuming you have an instance of the UserProfile form called userProfileForm
+
+
+
             bool SerialcontainsOnlyDigits = Regex.IsMatch(textBoxForSerial.Text, @"^[0-9]+$");
             if (!(textBoxForSerial.Text == "" && kryptonComboBox_gender.SelectedIndex != -1 && textBoxForCageNumber.Text == "" && textBoxForMotherSerial.Text == "" && textBoxForFatherSerial.Text == ""))
             {
@@ -50,8 +58,8 @@ namespace WindowsFormsApp2
 
                     Bird bird = new Bird(serial, species, subspecies, hatchdate, gender, cagenumber, motherserial, fatherserial);
 
-                    string query = "INSERT INTO birds (Serial, Species, Subspecies, HatchDate, Gender, CageNumber, MotherSerial, FatherSerial) " +
-                       "VALUES (@Serial, @Species, @Subspecies, @HatchDate, @Gender, @CageNumber, @MotherSerial, @FatherSerial)";
+                    string query = "INSERT INTO birds (Serial, Species, Subspecies, HatchDate, Gender, CageNumber, MotherSerial, FatherSerial,UserID) " +
+                       "VALUES (@Serial, @Species, @Subspecies, @HatchDate, @Gender, @CageNumber, @MotherSerial, @FatherSerial,@UserID)";
 
                     List<OleDbParameter> parameters = new List<OleDbParameter>()
                     {
@@ -62,7 +70,8 @@ namespace WindowsFormsApp2
                         new OleDbParameter("@Gender", bird.gender),
                         new OleDbParameter("@CageNumber", bird.cage_number),
                         new OleDbParameter("@MotherSerial", bird.Mother_serial),
-                        new OleDbParameter("@FatherSerial", bird.Father_serial)
+                        new OleDbParameter("@FatherSerial", bird.Father_serial),
+                        new OleDbParameter("@UserID", userID)
                     };
                     using (OleDbConnection connection = new OleDbConnection(connectionString))
                     {

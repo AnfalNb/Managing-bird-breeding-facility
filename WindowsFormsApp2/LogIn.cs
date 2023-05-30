@@ -12,60 +12,59 @@ using ComponentFactory.Krypton.Toolkit;
 
 using System.Data.OleDb;
 using Excel = Microsoft.Office.Interop.Excel;
-
+using System.Security.Cryptography.X509Certificates;
 
 namespace WindowsFormsApp2
 {
     public partial class LogIn : KryptonForm
     {
+        private string usersExcelFilePath = @"C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\database1.xlsx";
+
+
+        
+
         public LogIn()
         {
             InitializeComponent();
-        }
-
-        private void LogIn_Load(object sender, EventArgs e)
-        {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;
             string password = textBox2.Text;
-            // Create an instance of the Excel Application object
+
+            // Authenticate user from Excel file
             Excel.Application excelApp = new Excel.Application();
-            Excel.Workbook excelWB = excelApp.Workbooks.Open(@"C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\database1.xlsx");
+            Excel.Workbook excelWB = excelApp.Workbooks.Open(usersExcelFilePath);
             Excel._Worksheet excelWS = excelWB.ActiveSheet;
 
-            // Find the next empty row in the worksheet
-            int i = 2;
-            while (excelWS.Cells[i, 1].Value != null)
-            {
-                i++;
-            }
+            int lastRow = excelWS.Cells[excelWS.Rows.Count, 2].End(Excel.XlDirection.xlUp).Row;
 
-            // Check if the username & password already exists in the worksheet
-            for (int j = 2; j < i; j++)
+
+
+            for (int i = 2; i <= lastRow; i++)
             {
-                if (excelWS.Cells[j, 2].Value.ToString() == username && excelWS.Cells[j, 3].Value.ToString() == password)
-                {   
+                if (excelWS.Cells[i, 2].Value.ToString() == username && excelWS.Cells[i, 3].Value.ToString() == password)
+                {
                     excelWB.Close();
                     excelApp.Quit();
-                    new UserProfile().Show();
-                    this.Hide();
-                    return;
                 }
+
             }
-            MessageBox.Show("USERNAME OR PASSWORD WRONG.");
-            textBox1.Text = "";
-            textBox2.Text = "";
+
+   
+
+           
+                MessageBox.Show("USERNAME OR PASSWORD WRONG.");
+                textBox1.Text = "";
+                textBox2.Text = "";
+        
            
         }
+
+
 
         private void checkbxShowPas_CheckedChanged(object sender, EventArgs e)
         {
@@ -93,23 +92,13 @@ namespace WindowsFormsApp2
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-        }
+
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '•';
         }
 
-        private void LogIn_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
     }
 }
