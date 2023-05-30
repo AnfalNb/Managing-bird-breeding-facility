@@ -112,14 +112,12 @@ namespace WindowsFormsApp2
 
         private void kryptonComboBox_species_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-
             // Clear the items in the second combobox
             kryptonComboBox_sup_species.Items.Clear();
             if (kryptonComboBox_species.SelectedItem != null)
             {
                 // Get the selected species from the first combobox
                 string selectedSpecies = kryptonComboBox_species.SelectedItem.ToString();
-
                 // Set the items in the second combobox based on the selected species
                 switch (selectedSpecies)
                 {

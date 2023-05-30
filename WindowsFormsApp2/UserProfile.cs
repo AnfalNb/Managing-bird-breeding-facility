@@ -37,7 +37,7 @@ namespace WindowsFormsApp2
                 connection.Open();
                 using (OleDbCommand command = new OleDbCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@UserID", LoggedInUserID);
+                    command.Parameters.AddWithValue("@UserID", userId);
 
                     using (OleDbDataReader reader = command.ExecuteReader())
                     {
