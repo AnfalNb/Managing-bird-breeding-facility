@@ -18,24 +18,28 @@ namespace WindowsFormsApp2
 {
     public partial class LogIn : KryptonForm
     {
-        private string usersExcelFilePath = @"C:\Users\אדם אלנבארי\Documents\GitHub\Managing-bird-breeding-facility\database1.xlsx";
+        private string usersExcelFilePath = @"C:\Users\enasa\OneDrive\שולחן העבודה\The Project\Managing-bird-breeding-facility\database1.xlsx";
 
 
 
         public static string userId;
+
+        public static string user_name;
+
         public LogIn()
         {
             InitializeComponent();
             userId = "None";
+           
+            
         }
         public static string getuserId (){ return userId; }
-
+        public static string getusername() { return user_name; }
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;
             string password = textBox2.Text;
-
             // Authenticate user from Excel file
             Excel.Application excelApp = new Excel.Application();
             Excel.Workbook excelWB = excelApp.Workbooks.Open(usersExcelFilePath);
@@ -50,6 +54,7 @@ namespace WindowsFormsApp2
                 if (excelWS.Cells[i, 2].Value.ToString() == username && excelWS.Cells[i, 3].Value.ToString() == password)
                 {
                     userId = excelWS.Cells[i, 1].Value.ToString();
+                    user_name = username;
                     excelWB.Close();
                     excelApp.Quit(); 
                     new UserProfile().Show();

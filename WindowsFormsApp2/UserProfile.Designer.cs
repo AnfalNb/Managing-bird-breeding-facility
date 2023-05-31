@@ -32,22 +32,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfile));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Serial = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Species = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Subspecies = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.HatchDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Gender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CageNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.MotherSerial = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.FatherSerial = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
             this.kryptonButton_search_bird = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton_page_search_cage = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1_page_add_bird = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton2_page_addcage = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelusername = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -67,91 +61,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-7, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-58, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 214);
+            this.pictureBox1.Size = new System.Drawing.Size(1078, 258);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Serial,
-            this.Species,
-            this.Subspecies,
-            this.HatchDate,
-            this.Gender,
-            this.CageNumber,
-            this.MotherSerial,
-            this.FatherSerial});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 374);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(893, 182);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // Serial
-            // 
-            this.Serial.Text = "Serial";
-            this.Serial.Width = 85;
-            // 
-            // Species
-            // 
-            this.Species.Text = "Species";
-            this.Species.Width = 90;
-            // 
-            // Subspecies
-            // 
-            this.Subspecies.Text = "Subspecies";
-            this.Subspecies.Width = 95;
-            // 
-            // HatchDate
-            // 
-            this.HatchDate.Text = "HatchDate";
-            this.HatchDate.Width = 100;
-            // 
-            // Gender
-            // 
-            this.Gender.Text = "Gender";
-            this.Gender.Width = 80;
-            // 
-            // CageNumber
-            // 
-            this.CageNumber.Text = "CageNumber";
-            this.CageNumber.Width = 100;
-            // 
-            // MotherSerial
-            // 
-            this.MotherSerial.Text = "MotherSerial";
-            this.MotherSerial.Width = 100;
-            // 
-            // FatherSerial
-            // 
-            this.FatherSerial.Text = "FatherSerial";
-            this.FatherSerial.Width = 100;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label1.Location = new System.Drawing.Point(-2, 348);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "My Birds :";
             // 
             // kryptonButton_search_bird
             // 
             this.kryptonButton_search_bird.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton_search_bird.Location = new System.Drawing.Point(713, 230);
+            this.kryptonButton_search_bird.Location = new System.Drawing.Point(12, 427);
+            this.kryptonButton_search_bird.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonButton_search_bird.Name = "kryptonButton_search_bird";
             this.kryptonButton_search_bird.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_search_bird.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
@@ -176,7 +100,7 @@
             this.kryptonButton_search_bird.OverrideFocus.Border.Rounding = 100;
             this.kryptonButton_search_bird.OverrideFocus.Border.Width = 1;
             this.kryptonButton_search_bird.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton_search_bird.Size = new System.Drawing.Size(182, 49);
+            this.kryptonButton_search_bird.Size = new System.Drawing.Size(205, 61);
             this.kryptonButton_search_bird.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_search_bird.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_search_bird.StateCommon.Back.ColorAngle = 45F;
@@ -224,7 +148,8 @@
             this.kryptonButton_page_search_cage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton_page_search_cage.Location = new System.Drawing.Point(489, 230);
+            this.kryptonButton_page_search_cage.Location = new System.Drawing.Point(794, 427);
+            this.kryptonButton_page_search_cage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonButton_page_search_cage.Name = "kryptonButton_page_search_cage";
             this.kryptonButton_page_search_cage.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_page_search_cage.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
@@ -249,7 +174,7 @@
             this.kryptonButton_page_search_cage.OverrideFocus.Border.Rounding = 100;
             this.kryptonButton_page_search_cage.OverrideFocus.Border.Width = 1;
             this.kryptonButton_page_search_cage.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton_page_search_cage.Size = new System.Drawing.Size(182, 49);
+            this.kryptonButton_page_search_cage.Size = new System.Drawing.Size(205, 61);
             this.kryptonButton_page_search_cage.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_page_search_cage.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton_page_search_cage.StateCommon.Back.ColorAngle = 45F;
@@ -297,7 +222,8 @@
             this.kryptonButton1_page_add_bird.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton1_page_add_bird.Location = new System.Drawing.Point(11, 230);
+            this.kryptonButton1_page_add_bird.Location = new System.Drawing.Point(265, 427);
+            this.kryptonButton1_page_add_bird.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonButton1_page_add_bird.Name = "kryptonButton1_page_add_bird";
             this.kryptonButton1_page_add_bird.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton1_page_add_bird.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
@@ -322,7 +248,7 @@
             this.kryptonButton1_page_add_bird.OverrideFocus.Border.Rounding = 100;
             this.kryptonButton1_page_add_bird.OverrideFocus.Border.Width = 1;
             this.kryptonButton1_page_add_bird.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1_page_add_bird.Size = new System.Drawing.Size(182, 49);
+            this.kryptonButton1_page_add_bird.Size = new System.Drawing.Size(205, 61);
             this.kryptonButton1_page_add_bird.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton1_page_add_bird.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton1_page_add_bird.StateCommon.Back.ColorAngle = 45F;
@@ -370,7 +296,8 @@
             this.kryptonButton2_page_addcage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonButton2_page_addcage.Location = new System.Drawing.Point(244, 230);
+            this.kryptonButton2_page_addcage.Location = new System.Drawing.Point(536, 427);
+            this.kryptonButton2_page_addcage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kryptonButton2_page_addcage.Name = "kryptonButton2_page_addcage";
             this.kryptonButton2_page_addcage.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton2_page_addcage.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
@@ -395,7 +322,7 @@
             this.kryptonButton2_page_addcage.OverrideFocus.Border.Rounding = 100;
             this.kryptonButton2_page_addcage.OverrideFocus.Border.Width = 1;
             this.kryptonButton2_page_addcage.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton2_page_addcage.Size = new System.Drawing.Size(182, 49);
+            this.kryptonButton2_page_addcage.Size = new System.Drawing.Size(205, 61);
             this.kryptonButton2_page_addcage.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton2_page_addcage.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
             this.kryptonButton2_page_addcage.StateCommon.Back.ColorAngle = 45F;
@@ -441,26 +368,58 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 309);
+            this.label2.Location = new System.Drawing.Point(364, 288);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Size = new System.Drawing.Size(0, 20);
+            this.label2.TabIndex = 54;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.CadetBlue;
+            this.label4.Location = new System.Drawing.Point(426, 279);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 29);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Welcome";
+            // 
+            // labelusername
+            // 
+            this.labelusername.AutoSize = true;
+            this.labelusername.Font = new System.Drawing.Font("Script MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelusername.ForeColor = System.Drawing.Color.CadetBlue;
+            this.labelusername.Location = new System.Drawing.Point(531, 279);
+            this.labelusername.Name = "labelusername";
+            this.labelusername.Size = new System.Drawing.Size(104, 29);
+            this.labelusername.TabIndex = 57;
+            this.labelusername.Text = "username";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(142, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 58;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // UserProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(899, 564);
+            this.ClientSize = new System.Drawing.Size(1011, 705);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.labelusername);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.kryptonButton2_page_addcage);
             this.Controls.Add(this.kryptonButton1_page_add_bird);
             this.Controls.Add(this.kryptonButton_page_search_cage);
             this.Controls.Add(this.kryptonButton_search_bird);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -470,6 +429,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserProfile";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,20 +439,13 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader Serial;
-        private System.Windows.Forms.ColumnHeader Species;
-        private System.Windows.Forms.ColumnHeader Subspecies;
-        private System.Windows.Forms.ColumnHeader HatchDate;
-        private System.Windows.Forms.ColumnHeader Gender;
-        private System.Windows.Forms.ColumnHeader CageNumber;
-        private System.Windows.Forms.ColumnHeader MotherSerial;
-        private System.Windows.Forms.ColumnHeader FatherSerial;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton_search_bird;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton_page_search_cage;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1_page_add_bird;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2_page_addcage;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelusername;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

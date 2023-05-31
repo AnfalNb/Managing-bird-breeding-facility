@@ -16,7 +16,7 @@ namespace WindowsFormsApp2
     public partial class SearchBird : KryptonForm
     {
         private string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Database2.mdb";
-
+        public string userId = LogIn.getuserId();
         public SearchBird()
         {
             InitializeComponent();
@@ -63,9 +63,10 @@ namespace WindowsFormsApp2
             {
                 using (OleDbConnection con = new OleDbConnection(connectionString))
                 {
-                    string commandText = $"SELECT * FROM birds WHERE {searchCriteria} LIKE @searchTerm;";
+                    string commandText = $"SELECT * FROM birds WHERE UserID = @UserID AND {searchCriteria} LIKE @searchTerm;";
                     using (OleDbCommand cmd = new OleDbCommand(commandText, con))
                     {
+                        cmd.Parameters.AddWithValue("@UserID", userId);
                         cmd.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
 
                         using (OleDbDataAdapter adapt = new OleDbDataAdapter(cmd))
@@ -82,6 +83,13 @@ namespace WindowsFormsApp2
                                 dataGridView1.DataSource = ds.Tables[0];
 
                             }
+                            if (ds.Tables.Count > 0)
+                            {
+                                if (ds.Tables[0].Columns.Count > 0)
+                                    ds.Tables[0].Columns.RemoveAt(8);
+                                dataGridView1.DataSource = ds.Tables[0];
+
+                            }
                         }
                     }
                 }
@@ -92,12 +100,17 @@ namespace WindowsFormsApp2
             }
         }
 
-       
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
 
+            this.Close();
+            UserProfile UserProfileForm = new UserProfile();
 
+            // Show the current form
+            UserProfileForm.Show();
 
-
-
-       
+            // Optionally, hide the previous form
+            this.Hide();
+        }
     }
 }

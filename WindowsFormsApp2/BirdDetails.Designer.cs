@@ -31,15 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BirdDetails));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelSpecies = new System.Windows.Forms.Label();
-            this.labelSubspecies = new System.Windows.Forms.Label();
-            this.labelSerial = new System.Windows.Forms.Label();
-            this.labelCageNumber = new System.Windows.Forms.Label();
-            this.labelGender = new System.Windows.Forms.Label();
-            this.labelHatchDate = new System.Windows.Forms.Label();
-            this.labelMotherSerial = new System.Windows.Forms.Label();
-            this.labelFatherSerial = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,7 +39,21 @@
             this.label11 = new System.Windows.Forms.Label();
             this.hjk = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.kryptonButton1_page_add_fledgling = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBoxmserialdetails = new System.Windows.Forms.TextBox();
+            this.textBoxForcagenumberdetails = new System.Windows.Forms.TextBox();
+            this.textBoxForgenderdetails = new System.Windows.Forms.TextBox();
+            this.textBoxForhanchdatethdetails = new System.Windows.Forms.TextBox();
+            this.textBoxFordetailsSerial = new System.Windows.Forms.TextBox();
+            this.textBoxfserialdetails = new System.Windows.Forms.TextBox();
+            this.textBoxforspeciesdetails = new System.Windows.Forms.TextBox();
+            this.textBoxforsubspeciesdetails = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -65,136 +70,6 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 10;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-4, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(402, 341);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelSpecies
-            // 
-            this.labelSpecies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSpecies.AutoSize = true;
-            this.labelSpecies.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSpecies.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelSpecies.Location = new System.Drawing.Point(144, 367);
-            this.labelSpecies.Name = "labelSpecies";
-            this.labelSpecies.Size = new System.Drawing.Size(31, 33);
-            this.labelSpecies.TabIndex = 28;
-            this.labelSpecies.Text = "o";
-            // 
-            // labelSubspecies
-            // 
-            this.labelSubspecies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSubspecies.AutoSize = true;
-            this.labelSubspecies.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelSubspecies.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubspecies.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelSubspecies.Location = new System.Drawing.Point(181, 434);
-            this.labelSubspecies.Name = "labelSubspecies";
-            this.labelSubspecies.Size = new System.Drawing.Size(31, 33);
-            this.labelSubspecies.TabIndex = 29;
-            this.labelSubspecies.Text = "o";
-            // 
-            // labelSerial
-            // 
-            this.labelSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSerial.AutoSize = true;
-            this.labelSerial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelSerial.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSerial.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelSerial.Location = new System.Drawing.Point(566, 48);
-            this.labelSerial.Name = "labelSerial";
-            this.labelSerial.Size = new System.Drawing.Size(31, 33);
-            this.labelSerial.TabIndex = 30;
-            this.labelSerial.Text = "o";
-            // 
-            // labelCageNumber
-            // 
-            this.labelCageNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelCageNumber.AutoSize = true;
-            this.labelCageNumber.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelCageNumber.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCageNumber.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelCageNumber.Location = new System.Drawing.Point(666, 230);
-            this.labelCageNumber.Name = "labelCageNumber";
-            this.labelCageNumber.Size = new System.Drawing.Size(31, 33);
-            this.labelCageNumber.TabIndex = 31;
-            this.labelCageNumber.Text = "o";
-            // 
-            // labelGender
-            // 
-            this.labelGender.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelGender.AutoSize = true;
-            this.labelGender.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelGender.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelGender.Location = new System.Drawing.Point(587, 164);
-            this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(31, 33);
-            this.labelGender.TabIndex = 32;
-            this.labelGender.Text = "o";
-            this.labelGender.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // labelHatchDate
-            // 
-            this.labelHatchDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelHatchDate.AutoSize = true;
-            this.labelHatchDate.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelHatchDate.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHatchDate.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelHatchDate.Location = new System.Drawing.Point(634, 104);
-            this.labelHatchDate.Name = "labelHatchDate";
-            this.labelHatchDate.Size = new System.Drawing.Size(31, 33);
-            this.labelHatchDate.TabIndex = 33;
-            this.labelHatchDate.Text = "o";
-            // 
-            // labelMotherSerial
-            // 
-            this.labelMotherSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelMotherSerial.AutoSize = true;
-            this.labelMotherSerial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelMotherSerial.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotherSerial.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelMotherSerial.Location = new System.Drawing.Point(679, 293);
-            this.labelMotherSerial.Name = "labelMotherSerial";
-            this.labelMotherSerial.Size = new System.Drawing.Size(31, 33);
-            this.labelMotherSerial.TabIndex = 34;
-            this.labelMotherSerial.Text = "o";
-            // 
-            // labelFatherSerial
-            // 
-            this.labelFatherSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelFatherSerial.AutoSize = true;
-            this.labelFatherSerial.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelFatherSerial.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFatherSerial.ForeColor = System.Drawing.Color.CadetBlue;
-            this.labelFatherSerial.Location = new System.Drawing.Point(665, 355);
-            this.labelFatherSerial.Name = "labelFatherSerial";
-            this.labelFatherSerial.Size = new System.Drawing.Size(31, 33);
-            this.labelFatherSerial.TabIndex = 35;
-            this.labelFatherSerial.Text = "o";
-            // 
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -203,7 +78,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label6.Location = new System.Drawing.Point(464, 48);
+            this.label6.Location = new System.Drawing.Point(465, 65);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 33);
             this.label6.TabIndex = 36;
@@ -217,7 +92,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label7.Location = new System.Drawing.Point(14, 367);
+            this.label7.Location = new System.Drawing.Point(12, 418);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(125, 33);
             this.label7.TabIndex = 37;
@@ -231,7 +106,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label8.Location = new System.Drawing.Point(14, 434);
+            this.label8.Location = new System.Drawing.Point(12, 472);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(161, 33);
             this.label8.TabIndex = 38;
@@ -245,7 +120,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label9.Location = new System.Drawing.Point(463, 104);
+            this.label9.Location = new System.Drawing.Point(464, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(165, 33);
             this.label9.TabIndex = 39;
@@ -259,7 +134,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label10.Location = new System.Drawing.Point(464, 164);
+            this.label10.Location = new System.Drawing.Point(465, 181);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(117, 33);
             this.label10.TabIndex = 40;
@@ -273,7 +148,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label11.Location = new System.Drawing.Point(463, 230);
+            this.label11.Location = new System.Drawing.Point(464, 247);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(197, 33);
             this.label11.TabIndex = 41;
@@ -287,7 +162,7 @@
             this.hjk.AutoSize = true;
             this.hjk.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hjk.ForeColor = System.Drawing.Color.CadetBlue;
-            this.hjk.Location = new System.Drawing.Point(464, 293);
+            this.hjk.Location = new System.Drawing.Point(465, 310);
             this.hjk.Name = "hjk";
             this.hjk.Size = new System.Drawing.Size(209, 33);
             this.hjk.TabIndex = 42;
@@ -301,11 +176,213 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label12.Location = new System.Drawing.Point(463, 355);
+            this.label12.Location = new System.Drawing.Point(464, 372);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(196, 33);
             this.label12.TabIndex = 43;
             this.label12.Text = "Father\'s serial :";
+            // 
+            // kryptonButton1_page_add_fledgling
+            // 
+            this.kryptonButton1_page_add_fledgling.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonButton1_page_add_fledgling.Location = new System.Drawing.Point(794, 583);
+            this.kryptonButton1_page_add_fledgling.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.kryptonButton1_page_add_fledgling.Name = "kryptonButton1_page_add_fledgling";
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Back.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.Rounding = 20;
+            this.kryptonButton1_page_add_fledgling.OverrideDefault.Border.Width = 1;
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Back.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Border.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Border.Rounding = 100;
+            this.kryptonButton1_page_add_fledgling.OverrideFocus.Border.Width = 1;
+            this.kryptonButton1_page_add_fledgling.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton1_page_add_fledgling.Size = new System.Drawing.Size(205, 61);
+            this.kryptonButton1_page_add_fledgling.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateCommon.Back.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.Rounding = 20;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Border.Width = 1;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1_page_add_fledgling.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Back.ColorAngle = 135F;
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.ColorAngle = 135F;
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.Rounding = 20;
+            this.kryptonButton1_page_add_fledgling.StatePressed.Border.Width = 1;
+            this.kryptonButton1_page_add_fledgling.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateTracking.Back.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(194)))), ((int)(((byte)(189)))));
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.ColorAngle = 45F;
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.Rounding = 20;
+            this.kryptonButton1_page_add_fledgling.StateTracking.Border.Width = 1;
+            this.kryptonButton1_page_add_fledgling.TabIndex = 52;
+            this.kryptonButton1_page_add_fledgling.Values.Text = "Add Fledgling";
+            this.kryptonButton1_page_add_fledgling.Click += new System.EventHandler(this.kryptonButton1_page_add_fledgling_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 65);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(402, 341);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(52, -5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(49, 47);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 54;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // textBoxmserialdetails
+            // 
+            this.textBoxmserialdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxmserialdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxmserialdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxmserialdetails.Location = new System.Drawing.Point(680, 310);
+            this.textBoxmserialdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxmserialdetails.Multiline = true;
+            this.textBoxmserialdetails.Name = "textBoxmserialdetails";
+            this.textBoxmserialdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxmserialdetails.TabIndex = 93;
+            // 
+            // textBoxForcagenumberdetails
+            // 
+            this.textBoxForcagenumberdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxForcagenumberdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxForcagenumberdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxForcagenumberdetails.Location = new System.Drawing.Point(667, 247);
+            this.textBoxForcagenumberdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxForcagenumberdetails.Multiline = true;
+            this.textBoxForcagenumberdetails.Name = "textBoxForcagenumberdetails";
+            this.textBoxForcagenumberdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxForcagenumberdetails.TabIndex = 92;
+            // 
+            // textBoxForgenderdetails
+            // 
+            this.textBoxForgenderdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxForgenderdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxForgenderdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxForgenderdetails.Location = new System.Drawing.Point(588, 181);
+            this.textBoxForgenderdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxForgenderdetails.Multiline = true;
+            this.textBoxForgenderdetails.Name = "textBoxForgenderdetails";
+            this.textBoxForgenderdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxForgenderdetails.TabIndex = 91;
+            // 
+            // textBoxForhanchdatethdetails
+            // 
+            this.textBoxForhanchdatethdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxForhanchdatethdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxForhanchdatethdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxForhanchdatethdetails.Location = new System.Drawing.Point(635, 121);
+            this.textBoxForhanchdatethdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxForhanchdatethdetails.Multiline = true;
+            this.textBoxForhanchdatethdetails.Name = "textBoxForhanchdatethdetails";
+            this.textBoxForhanchdatethdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxForhanchdatethdetails.TabIndex = 90;
+            // 
+            // textBoxFordetailsSerial
+            // 
+            this.textBoxFordetailsSerial.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxFordetailsSerial.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFordetailsSerial.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxFordetailsSerial.Location = new System.Drawing.Point(567, 65);
+            this.textBoxFordetailsSerial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxFordetailsSerial.Multiline = true;
+            this.textBoxFordetailsSerial.Name = "textBoxFordetailsSerial";
+            this.textBoxFordetailsSerial.Size = new System.Drawing.Size(199, 30);
+            this.textBoxFordetailsSerial.TabIndex = 89;
+            // 
+            // textBoxfserialdetails
+            // 
+            this.textBoxfserialdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxfserialdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxfserialdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxfserialdetails.Location = new System.Drawing.Point(666, 372);
+            this.textBoxfserialdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxfserialdetails.Multiline = true;
+            this.textBoxfserialdetails.Name = "textBoxfserialdetails";
+            this.textBoxfserialdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxfserialdetails.TabIndex = 94;
+            // 
+            // textBoxforspeciesdetails
+            // 
+            this.textBoxforspeciesdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxforspeciesdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxforspeciesdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxforspeciesdetails.Location = new System.Drawing.Point(143, 418);
+            this.textBoxforspeciesdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxforspeciesdetails.Multiline = true;
+            this.textBoxforspeciesdetails.Name = "textBoxforspeciesdetails";
+            this.textBoxforspeciesdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxforspeciesdetails.TabIndex = 95;
+            // 
+            // textBoxforsubspeciesdetails
+            // 
+            this.textBoxforsubspeciesdetails.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxforsubspeciesdetails.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxforsubspeciesdetails.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.textBoxforsubspeciesdetails.Location = new System.Drawing.Point(179, 475);
+            this.textBoxforsubspeciesdetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxforsubspeciesdetails.Multiline = true;
+            this.textBoxforsubspeciesdetails.Name = "textBoxforsubspeciesdetails";
+            this.textBoxforsubspeciesdetails.Size = new System.Drawing.Size(199, 30);
+            this.textBoxforsubspeciesdetails.TabIndex = 96;
             // 
             // BirdDetails
             // 
@@ -313,6 +390,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1011, 705);
+            this.Controls.Add(this.textBoxforsubspeciesdetails);
+            this.Controls.Add(this.textBoxforspeciesdetails);
+            this.Controls.Add(this.textBoxfserialdetails);
+            this.Controls.Add(this.textBoxmserialdetails);
+            this.Controls.Add(this.textBoxForcagenumberdetails);
+            this.Controls.Add(this.textBoxForgenderdetails);
+            this.Controls.Add(this.textBoxForhanchdatethdetails);
+            this.Controls.Add(this.textBoxFordetailsSerial);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.kryptonButton1_page_add_fledgling);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.hjk);
             this.Controls.Add(this.label11);
@@ -321,14 +409,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.labelFatherSerial);
-            this.Controls.Add(this.labelMotherSerial);
-            this.Controls.Add(this.labelHatchDate);
-            this.Controls.Add(this.labelGender);
-            this.Controls.Add(this.labelCageNumber);
-            this.Controls.Add(this.labelSerial);
-            this.Controls.Add(this.labelSubspecies);
-            this.Controls.Add(this.labelSpecies);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BirdDetails";
@@ -337,6 +417,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BirdDetails";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,14 +428,6 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label labelSpecies;
-        private System.Windows.Forms.Label labelSubspecies;
-        private System.Windows.Forms.Label labelSerial;
-        private System.Windows.Forms.Label labelCageNumber;
-        private System.Windows.Forms.Label labelGender;
-        private System.Windows.Forms.Label labelHatchDate;
-        private System.Windows.Forms.Label labelMotherSerial;
-        private System.Windows.Forms.Label labelFatherSerial;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -362,5 +436,16 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label hjk;
         private System.Windows.Forms.Label label12;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1_page_add_fledgling;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBoxmserialdetails;
+        private System.Windows.Forms.TextBox textBoxForcagenumberdetails;
+        private System.Windows.Forms.TextBox textBoxForgenderdetails;
+        private System.Windows.Forms.TextBox textBoxForhanchdatethdetails;
+        private System.Windows.Forms.TextBox textBoxFordetailsSerial;
+        private System.Windows.Forms.TextBox textBoxfserialdetails;
+        private System.Windows.Forms.TextBox textBoxforspeciesdetails;
+        private System.Windows.Forms.TextBox textBoxforsubspeciesdetails;
     }
 }

@@ -17,44 +17,59 @@ using System.Text.RegularExpressions;
 using System.Windows;
 
 
-
-
 namespace WindowsFormsApp2
 {
-    public partial class AddBirds : KryptonForm
+    public partial class AddFledglings : KryptonForm
     {
         private string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Database2.mdb";
+
         public string userId = LogIn.getuserId();
-        public AddBirds()
+        public AddFledglings()
         {
             InitializeComponent();
+            textBoxspeciesfledgling.Enabled = false;
+            textBoxsubspeciesfledgling.Enabled = false;
+            textBoxForCageNumberfledgling.Enabled = false;
+          
 
-           
         }
-     
-
-       
-
-        private void kryptonButton_ADD_BIRD_Click(object sender, EventArgs e)
+        public void SetParentBirdDetails(string species, string subspecies, string cageNumber, string parentgender, string serialparent)
         {
-    
-            bool SerialcontainsOnlyDigits = Regex.IsMatch(textBoxForSerial.Text, @"^[0-9]+$");
-            if (!(textBoxForSerial.Text == "" && kryptonComboBox_gender.SelectedIndex != -1 && textBoxForCageNumber.Text == "" && textBoxForMotherSerial.Text == "" && textBoxForFatherSerial.Text == ""))
+            // Set the parent bird's details in the respective controls of the AddFledglingForm
+            textBoxspeciesfledgling.Text = species;
+            textBoxsubspeciesfledgling.Text = subspecies;
+            textBoxForCageNumberfledgling.Text = cageNumber;
+            if (parentgender == "Male") { 
+                textBoxForMotherSerial.Text = serialparent;
+                textBoxForMotherSerial.Enabled = false;
+            }
+            if (parentgender == "Female") { 
+                textBoxForFatherSerial.Text = serialparent;
+                textBoxForFatherSerial.Enabled = false;
+            }
+            //labelMotherSerial.Text = motherSerial;
+            //labelFatherSerial.Text = fatherSerial;
+            //if (labelGender.Text == "Female") { string fatherSerial = labelFatherSerial.Text; }
+            //if (labelGender.Text == "Male") { string motherSerial = labelMotherSerial.Text; }
+        }
+
+        private void kryptonButton_ADD_fledgling_Click(object sender, EventArgs e)
+        {
+ 
+            bool SerialcontainsOnlyDigits = Regex.IsMatch(textBoxForSerialfledgling.Text, @"^[0-9]+$");
+            if (!(textBoxForSerialfledgling.Text == ""))
             {
                 if (SerialcontainsOnlyDigits)
                 {
 
-                    ulong serial = Convert.ToUInt64(textBoxForSerial.Text.ToString());
-                    string species = kryptonComboBox_species.SelectedItem.ToString();
-                    string subspecies = kryptonComboBox_sup_species.SelectedItem.ToString();
-                    string hatchdate = kryptonDateTimePicker_hatch_date.Value.Date.ToString("dd-MM-yyyy");
-                    string gender = kryptonComboBox_gender.SelectedItem.ToString();
-                    string cagenumber = textBoxForCageNumber.Text;
+                    ulong serial = Convert.ToUInt64(textBoxForSerialfledgling.Text.ToString());
+                    string hatchdate = kryptonDateTimePicker_hatch_datefledgling.Value.Date.ToString("dd-MM-yyyy");
+                    string gender = kryptonComboBox_genderfledgling.SelectedItem.ToString();
                     string motherserial = textBoxForMotherSerial.Text;
                     string fatherserial = textBoxForFatherSerial.Text;
                     string UserID = userId;
 
-                    Bird bird = new Bird(serial, species, subspecies, hatchdate, gender, cagenumber, motherserial, fatherserial);
+                    Bird bird = new Bird(serial, textBoxspeciesfledgling.Text, textBoxsubspeciesfledgling.Text, hatchdate, gender, textBoxForCageNumberfledgling.Text, motherserial, fatherserial);
 
                     string query = "INSERT INTO birds (Serial, Species, Subspecies, HatchDate, Gender, CageNumber, MotherSerial, FatherSerial,UserID) " +
                        "VALUES (@Serial, @Species, @Subspecies, @HatchDate, @Gender, @CageNumber, @MotherSerial, @FatherSerial,@UserID)";
@@ -85,61 +100,28 @@ namespace WindowsFormsApp2
 
                         }
                     }
-
-                    textBoxForSerial.Text = string.Empty;
-                    kryptonComboBox_species.SelectedIndex = -1;
-                    kryptonComboBox_sup_species.SelectedIndex = -1;
-                    kryptonDateTimePicker_hatch_date.Value = DateTime.Now;
-                    kryptonComboBox_gender.SelectedIndex = -1;
-                    textBoxForCageNumber.Text = string.Empty;
+                    System.Windows.Forms.MessageBox.Show("The Fledglings has been successfully added.");
+                    textBoxForSerialfledgling.Text = string.Empty;
+                    textBoxsubspeciesfledgling.Text = string.Empty;
+                    textBoxsubspeciesfledgling.Text = string.Empty;
+                    kryptonDateTimePicker_hatch_datefledgling.Value = DateTime.Now;
+                    kryptonComboBox_genderfledgling.SelectedIndex = -1;
+                    textBoxForCageNumberfledgling.Text = string.Empty;
                     textBoxForMotherSerial.Text = string.Empty;
                     textBoxForFatherSerial.Text = string.Empty;
-
-                    System.Windows.Forms.MessageBox.Show("The BIRD has been successfully added.");
                 }
                 else
                 {
                     System.Windows.Forms.MessageBox.Show("Invalid serial bird number, It should contain both numbers and letters.");
-                    textBoxForSerial.Focus();
+                    textBoxForSerialfledgling.Focus();
                 }
             }
             else
             {
-              System.Windows.Forms.MessageBox.Show("Some fields are empty", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-        }
-
-        private void kryptonComboBox_species_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            // Clear the items in the second combobox
-            kryptonComboBox_sup_species.Items.Clear();
-            if (kryptonComboBox_species.SelectedItem != null)
-            {
-                // Get the selected species from the first combobox
-                string selectedSpecies = kryptonComboBox_species.SelectedItem.ToString();
-                // Set the items in the second combobox based on the selected species
-                switch (selectedSpecies)
-                {
-                    case "European Gouldian":
-                        kryptonComboBox_sup_species.Items.Add("East Europe");
-                        kryptonComboBox_sup_species.Items.Add("Western Europe");
-                        kryptonComboBox_sup_species.Items.Add("Central Europe");
-                        break;
-                    case "American Gouldian":
-                        kryptonComboBox_sup_species.Items.Add("North America");
-                        kryptonComboBox_sup_species.Items.Add("Central America");
-                        kryptonComboBox_sup_species.Items.Add("South America");
-                        break;
-                    case "Australian Gouldian":
-                        kryptonComboBox_sup_species.Items.Add("Central Australia");
-                        kryptonComboBox_sup_species.Items.Add("Coastal Cities");
-                        break;
-                    default:
-                        break;
-                }
+                System.Windows.Forms.MessageBox.Show("Some fields are empty", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {

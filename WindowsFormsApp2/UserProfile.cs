@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
@@ -14,65 +15,42 @@ namespace WindowsFormsApp2
 {
     public partial class UserProfile : KryptonForm
     {
-        public int LoggedInUserID {  get; set; }
+       
         private string connectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Database2.mdb";
+        public string username = LogIn.getusername();
+        public string userId = LogIn.getuserId();
         public UserProfile()
         {
             InitializeComponent();
-            //LoggedInUserID = loggedInUserID;
-            LoadUserBirds();
 
+            labelusername.Text = username;
+            
         }
-        public string userId = LogIn.getuserId();
-
-        private void LoadUserBirds()
+        private void listView_birds_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            // Clear existing items in the ListView
-            listView1.Items.Clear();
-
-            // Retrieve the user's birds from the database
-            string query = "SELECT * FROM birds WHERE UserID = @UserID";
-            using (OleDbConnection connection = new OleDbConnection(connectionString))
+            ListView listView = (ListView)sender;
+           
+            // Check if the click occurred on the desired column
+            if (listView.SelectedItems.Count > 0)
             {
-                connection.Open();
-                using (OleDbCommand command = new OleDbCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@UserID", userId);
+                ListViewItem selectedItem = listView.SelectedItems[0];
 
-                    using (OleDbDataReader reader = command.ExecuteReader())
-                    {
-                        // Loop through the retrieved rows and add them to the ListView
-                        while (reader.Read())
-                        {
-                            string serial = reader["Serial"].ToString();
-                            string species = reader["Species"].ToString();
-                            string subspecies = reader["Subspecies"].ToString();
-                            string hatchDate = reader["HatchDate"].ToString();
-                            string gender = reader["Gender"].ToString();
-                            string cageNumber = reader["CageNumber"].ToString();
-                            string motherSerial = reader["MotherSerial"].ToString();
-                            string fatherSerial = reader["FatherSerial"].ToString();
-
-                            ListViewItem item = new ListViewItem(new[]
-                            {
-                                serial,
-                                species,
-                                subspecies,
-                                hatchDate,
-                                gender,
-                                cageNumber,
-                                motherSerial,
-                                fatherSerial
-                            });
-
-                            listView1.Items.Add(item);
-                        }
-                    }
-                }
-                connection.Close();
+                ulong serial = Convert.ToUInt64( selectedItem.SubItems[e.Column].Text);
+                string species = selectedItem.SubItems[1].Text.ToString();
+                string subspecies = selectedItem.SubItems[2].Text.ToString();
+                string hatchDate = selectedItem.SubItems[3].Text.ToString();
+                string gender = selectedItem.SubItems[4].Text.ToString();
+                string cageNumber = selectedItem.SubItems[5].Text.ToString();
+                string motherSerial = selectedItem.SubItems[6].Text.ToString();
+                string fatherSerial = selectedItem.SubItems[7].Text.ToString();
+                // Create a new instance of the destination form/page
+                 BirdDetails birdDetailsForm = new BirdDetails();
+                birdDetailsForm.SetBirdDetails(serial, species, subspecies, hatchDate, gender, cageNumber, motherSerial, fatherSerial);
+                birdDetailsForm.ShowDialog();
             }
         }
 
+        
         private void kryptonButton_search_bird_Click(object sender, EventArgs e)
         {
             new SearchBird().Show();
@@ -86,8 +64,8 @@ namespace WindowsFormsApp2
 
         private void kryptonButton1_page_add_bird_Click(object sender, EventArgs e)
         {
-            AddBirds otherForm = new AddBirds(this);
-            otherForm.Show();
+            new AddBirds().Show();
+            this.Hide();
         }
 
         private void kryptonButton_page_search_cage_Click(object sender, EventArgs e)
@@ -96,9 +74,13 @@ namespace WindowsFormsApp2
             this.Hide();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            label2.Text = userId;
+            LogIn loginForm = new LogIn();
+            loginForm.Show();
+
+            // Close the current form
+            this.Close();
         }
     }
 }
