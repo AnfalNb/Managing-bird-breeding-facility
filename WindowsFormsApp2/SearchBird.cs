@@ -48,6 +48,7 @@ namespace WindowsFormsApp2
                 BirdDetails birdDetailsForm = new BirdDetails();
                 birdDetailsForm.SetBirdDetails(serial, species, subspecies, hatchDate, gender, cageNumber, motherSerial, fatherSerial);
                 birdDetailsForm.ShowDialog();
+                this.Hide();
             }
         }
 
